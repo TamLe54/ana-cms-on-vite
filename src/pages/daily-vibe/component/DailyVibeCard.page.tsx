@@ -102,10 +102,11 @@ const DailyVibeCard = ({
             />
           </Tooltip>
         </section>
-        <div className='flex'>
-          <div className='shrink w-[400px] h-[200px]'>
-            <img
-              className='h-full w-auto'
+        <div className='flex  justify-center'>
+          <div className='w-[auto] max-w-[40%] h-[auto]'>
+            <Image
+              height={"100%"}
+              width={"auto"}
               src={dailyVibe?.image}
               alt='dailyVibe'
             />
