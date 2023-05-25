@@ -1,0 +1,20 @@
+{
+  "baseColors": {
+    "primary": "#4D4479",
+    "secondary": "#7737FF",
+    "black": "#231F20"
+  },
+  "alertColors": {
+    "success": "#18A957",
+    "error": "#DF1642",
+    "warning": "#F8DE1F",
+    "focused": "#3D53F5"
+  },
+  "greyWatch": {
+    "grey100": "#F5F5F5",
+    "grey200": "#EEEEEE",
+    "grey300": "#E0E0E0",
+    "grey400": "#BDBDBD",
+    "grey600": "#9D9D9D"
+  }
+}

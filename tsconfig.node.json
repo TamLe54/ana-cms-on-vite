@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    //font config
+    "types": ["unplugin-fonts/client"]
+  },
+  "include": ["vite.config.ts"]
+}

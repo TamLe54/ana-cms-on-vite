@@ -1,0 +1,38 @@
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  border-right: 0px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: none;
+  font-weight: bold;
+}
+
+.ant-modal-wrap .log-out {
+  font-family: 'WorkSans', sans-serif;
+  .ant-modal-content {
+    background-color: white;
+    padding: 20px 30px;
+    .ant-modal-body {
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      .ant-modal-confirm-body-wrapper {
+        padding: 0px 20px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .ant-modal-confirm-btns {
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
