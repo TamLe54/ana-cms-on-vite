@@ -14,6 +14,8 @@ import './https/interceptors.http';
 import AffirmationPage from './pages/affirmation/Affirmation.page';
 import LoginPage from './pages/auth/Login.page';
 import routes from './routes';
+import Playground from './pages/playground/Playground';
+
 
 const router = createBrowserRouter([
   {
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
       />
     ),
     children: [
-      {
+  {
         path: routes.Affirmation.path,
         element: <AffirmationPage />,
       },
@@ -39,11 +41,15 @@ const router = createBrowserRouter([
         index: true,
         element: <Navigate to={routes.Affirmation.path} />,
       },
-
       {
         path: routes.DailyVibe.path,
         element: <DailyVibe />,
       },
+      {
+        path: "/playground",
+        element: <Playground/>
+      }
+     
     ],
   },
 ]);

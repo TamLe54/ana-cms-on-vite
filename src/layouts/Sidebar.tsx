@@ -34,6 +34,15 @@ const menuItems: MenuItem[] = [
     ),
     key: routes.DailyVibe.path,
   },
+  {
+   title: "Playground",
+   path: "/playground",
+    MenuIcon: (
+      <img src={Music} className='w-[20%] h-auto pr-1' alt='daily vibes' />
+    ),
+    key: "/playground",
+  },
+
 ];
 
 const Sidebar = () => {
