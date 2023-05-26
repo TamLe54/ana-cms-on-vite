@@ -41,7 +41,7 @@ const AffirmationPage = () => {
       setLoadingData(true);
       const response = await affirmationApi.getAffirmations(
         pagination.page,
-        pagination.limit,
+        pagination.limit
       );
       if (response.data.success) {
         console;
@@ -58,7 +58,7 @@ const AffirmationPage = () => {
 
   useEffect(() => {
     const newFilteredAffirmations = selectedTag
-      ? affirmations.filter(a => a.tags.includes(selectedTag))
+      ? affirmations.filter((a) => a.tags.includes(selectedTag))
       : affirmations;
     setFilteredAffirmations(newFilteredAffirmations);
   }, [selectedTag, affirmations]);
@@ -91,13 +91,20 @@ const AffirmationPage = () => {
         <div className='page-container grid grid-cols-3 gap-x-6 gap-y-8 pt-8 pb-8'>
           {affirmations.length === 0 ? (
             loadingData ? (
-              <Skeleton active title paragraph={{ rows: 1, width: '100%' }} />
-            ) : (
-              <NoMatch
-                className='absolute w-fit flex flex-col items-center  h-fit justify-center space-y-5 m-auto p-[120px]'
-                title='No affirmation was uploaded'
-                description=''
+              <Skeleton
+                active
+                avatar
+                title
+                paragraph={{ rows: 3, width: '100%' }}
               />
+            ) : (
+              !affirmations && (
+                <NoMatch
+                  className='absolute w-fit flex flex-col items-center  h-fit justify-center space-y-5 m-auto p-[120px]'
+                  title='No affirmation was uploaded'
+                  description=''
+                />
+              )
             )
           ) : filteredAffirmations.length === 0 ? (
             <>
@@ -106,7 +113,7 @@ const AffirmationPage = () => {
               </h2>
             </>
           ) : (
-            filteredAffirmations.map(affirmation => {
+            filteredAffirmations.map((affirmation) => {
               return (
                 <div key={affirmation.id}>
                   {loadingData ? (
