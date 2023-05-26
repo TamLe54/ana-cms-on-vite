@@ -55,10 +55,10 @@ const Journey = ({ id, title, chapters }: JourneyProps) => {
                       content={chapter.content}
                       index={index}
                     />
-                    {provided.placeholder}
                   </div>
                 );
               })}
+              {provided.placeholder}
             </div>
           );
         }}
