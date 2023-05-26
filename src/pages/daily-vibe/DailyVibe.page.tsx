@@ -30,7 +30,7 @@ const DailyVibePage = () => {
   const options: SelectProps['options'] = sortedReasons;
 
   const filteredDailyVibes = selectedTag
-    ? dailyVibes.filter(a => a.tags.includes(selectedTag))
+    ? dailyVibes.filter((a) => a.tags.includes(selectedTag))
     : dailyVibes;
 
   const getDailyVibes = async () => {
@@ -38,7 +38,7 @@ const DailyVibePage = () => {
       setLoadingData(true);
       const response = await dailyVibeApi.getDailyVibes(
         pagination.page,
-        pagination.limit,
+        pagination.limit
       );
       if (response.data.success) {
         setDailyVibes(response.data.data.dailyVibes);
@@ -78,22 +78,29 @@ const DailyVibePage = () => {
         <div className='grid grid-cols-2 md:grid-cols-1 2xl:grid-cols-2 gap-x-6 gap-y-8 pt-8 pb-8'>
           {dailyVibes.length === 0 ? (
             loadingData ? (
-              <Skeleton active title paragraph={{ rows: 1, width: '100%' }} />
-            ) : (
-              <NoMatch
-                className='absolute w-fit flex flex-col items-center  h-fit justify-center space-y-5 m-auto p-[120px]'
-                title='No affirmation was uploaded'
-                description=''
+              <Skeleton
+                active
+                avatar
+                title
+                paragraph={{ rows: 3, width: '100%' }}
               />
+            ) : (
+              !dailyVibes && (
+                <NoMatch
+                  className='absolute w-fit flex flex-col items-center  h-fit justify-center space-y-5 m-auto p-[120px]'
+                  title='No daily vibe was uploaded'
+                  description=''
+                />
+              )
             )
           ) : filteredDailyVibes.length === 0 ? (
             <>
               <h2 className='absolute left-1/2 font-semibold text-xl translate-x-[-10%]'>
-                No affirmation match your filter
+                No daily vibe match your filter
               </h2>
             </>
           ) : (
-            filteredDailyVibes.map(dailyVibe => {
+            filteredDailyVibes.map((dailyVibe) => {
               return (
                 <div key={dailyVibe.id}>
                   {loadingData ? (

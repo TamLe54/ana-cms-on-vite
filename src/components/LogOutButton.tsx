@@ -83,7 +83,7 @@ const LogOutButton: React.FC = () => {
         className={`flex bg-white w-[80%] h-fit p-3 
         rounded-lg m-auto justify-center items-center text-primary font-bold
         text-[16px] mb-[20px] border-none
-        hover:bg-[#3e3861] hover:text-white hover:cursor-pointer duration-[350ms]`}
+        hover:bg-[#3e3861] hover:text-white hover:cursor-pointer duration-[300ms]`}
         onClick={handleLogOut}
       >
         Log Out

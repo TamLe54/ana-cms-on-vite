@@ -19,11 +19,11 @@ const ana_theme = {
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     <PersistGate persistor={persist}>
-      <React.StrictMode>
-        <ConfigProvider theme={ana_theme}>
+      <ConfigProvider theme={ana_theme}>
+        <React.StrictMode>
           <App />
-        </ConfigProvider>
-      </React.StrictMode>
+        </React.StrictMode>
+      </ConfigProvider>
     </PersistGate>
   </Provider>
 );

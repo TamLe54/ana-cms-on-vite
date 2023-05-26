@@ -35,14 +35,13 @@ const menuItems: MenuItem[] = [
     key: routes.DailyVibe.path,
   },
   {
-   title: "Playground",
-   path: "/playground",
+    title: 'Playground',
+    path: '/playground',
     MenuIcon: (
       <img src={Music} className='w-[20%] h-auto pr-1' alt='daily vibes' />
     ),
-    key: "/playground",
+    key: '/playground',
   },
-
 ];
 
 const Sidebar = () => {
@@ -52,14 +51,15 @@ const Sidebar = () => {
   useEffect(() => {
     if (location) {
       setCurrentItem(
-        menuItems.filter(item => location.pathname.includes(item.path || ''))[0]
-          .path || '',
+        menuItems.filter((item) =>
+          location.pathname.includes(item.path || '')
+        )[0].path || ''
       );
     }
   }, [location]);
 
   return (
-    <Sider width={'18%'} className='bg-primary '>
+    <Sider width={'12%'} className='bg-primary '>
       <div className='flex flex-col h-full bg-primary'>
         <div className='flex justify-center p-12'>
           <img src={logo} alt='' className='login-logo' />
@@ -86,7 +86,7 @@ const Sidebar = () => {
                   height: '50%',
                   paddingTop: '10px',
                   paddingBottom: '10px',
-                  fontSize: '150%',
+                  fontSize: '17px',
                 }}
               >
                 <Link to={path ?? '/'}>
@@ -97,13 +97,15 @@ const Sidebar = () => {
           </Menu>
 
           <div className='flex flex-col justify-center'>
-            <p className='flex text-white justify-center text-[20px] font-bold'>
+            <p className='flex text-white justify-center text-[20px] mb-4 font-bold'>
               Admin
             </p>
 
             <LogOutButton />
 
-            <p className='ml-[20px] text-white'>Version: {VERSION_NUMBER}</p>
+            <p className='ml-[20px] mb-4 text-white'>
+              Version: {VERSION_NUMBER}
+            </p>
           </div>
         </div>
       </div>
