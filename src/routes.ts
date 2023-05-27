@@ -15,6 +15,7 @@ const routes = {
   ResetPassword: { path: "/reset-password" },
   NotFound: { path: "/404" },
   ServerError: { path: "/500" },
+  Journey:{path:'/journey', title:"Journey"}
 };
 
 export default routes;
