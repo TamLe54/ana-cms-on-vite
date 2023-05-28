@@ -3,138 +3,138 @@ import OptionType from "@models/Option.model";
 export const reasons: OptionType[] = [
   {
     value: "physicalPain",
-    label: "physical pain",
+    label: "Physical Pain",
   },
   {
     value: "insomnia",
-    label: "insomnia",
+    label: "Insomnia",
   },
   {
     value: "coupleLife",
-    label: "couple life",
+    label: "Couple Life",
   },
   {
     value: "workStress",
-    label: "work stress",
+    label: "Work Stress",
   },
   {
     value: "bigEvent",
-    label: "big event",
+    label: "Big Event",
   },
   {
     value: "friends",
-    label: "friends",
+    label: "Friends",
   },
   {
     value: "grief",
-    label: "grief",
+    label: "Grief",
   },
   {
     value: "cravings",
-    label: "cravings",
+    label: "Cravings",
   },
   {
     value: "parenting",
-    label: "parenting",
+    label: "Parenting",
   },
   {
     value: "bodyImage",
-    label: "body image",
+    label: "Body Image",
   },
   {
     value: "beingSingle",
-    label: "being single",
+    label: "Being Single",
   },
   {
     value: "postpartum",
-    label: "postpartum",
+    label: "Postpartum",
   },
   {
     value: "hotFlashes",
-    label: "hot flashes",
+    label: "Hot Flashes",
   },
   {
     value: "laborAnxiety",
-    label: "labor anxiety",
+    label: "Labor Anxiety",
   },
   {
     value: "pregnancyNausea",
-    label: "pregnancy nausea",
+    label: "Pregnancy Nausea",
   },
   {
     value: "pregnancyOverwhelms",
-    label: "pregnancy overwhelms",
+    label: "Pregnancy Overwhelms",
   },
   {
     value: "periodWoes",
-    label: "period woes",
+    label: "Period Woes",
   },
   {
     value: "fertilityWorries",
-    label: "fertility worries",
+    label: "Fertility Worries",
   },
   {
     value: "dating",
-    label: "dating",
+    label: "Dating",
   },
   {
     value: "workWins",
-    label: "work wins",
+    label: "Work Wins",
   },
   {
     value: "family",
-    label: "family",
+    label: "Family",
   },
   {
     value: "feelHealthy",
-    label: "feel healthy",
+    label: "Feel Healthy",
   },
   {
     value: "prize",
-    label: "prize",
+    label: "Prize",
   },
   {
     value: "socialLife",
-    label: "social life",
+    label: "Social Life",
   },
   {
     value: "romance",
-    label: "romance",
+    label: "Romance",
   },
   {
     value: "finances",
-    label: "finances",
+    label: "Finances",
   },
   {
     value: "sleptWell",
-    label: "slept well",
+    label: "Slept Well",
   },
   {
     value: "sexy",
-    label: "sexy",
+    label: "Sexy",
   },
   {
     value: "love",
-    label: "love",
+    label: "Love",
   },
   {
     value: "goodWorkout",
-    label: "good workout",
+    label: "Good Workout",
   },
   {
     value: "lifeWin",
-    label: "life win",
+    label: "Life Win",
   },
   {
     value: "pregnancy",
-    label: "pregnancy",
+    label: "Pregnancy",
   },
   {
     value: "baby",
-    label: "baby",
+    label: "Baby",
   },
   {
     value: "coupleStress",
-    label: "couple stress",
+    label: "Couple Stress",
   },
 ];

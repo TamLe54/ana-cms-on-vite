@@ -61,7 +61,7 @@ const Sidebar = () => {
 
   const handleClick: MenuClickEventHandler = (e) => {
     setCurrentItem(e.key);
-    console.log(indicator);
+
     setIndicator(FIRST_ITEM_TOP + 80 * Number.parseInt(e.key));
   };
 
