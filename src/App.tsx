@@ -16,6 +16,7 @@ import LoginPage from "./pages/auth/Login.page";
 import routes from "./routes";
 import Playground from "./pages/playground/Playground";
 import Journey from "./pages/journey/Journey";
+import GiftCodePage from "./pages/gift-code/GiftCodePage";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: routes.Journey.path,
         element: <Journey />,
+      },
+      {
+        path: routes.GiftCode.path,
+        element: <GiftCodePage />,
       },
       {
         path: "/playground",

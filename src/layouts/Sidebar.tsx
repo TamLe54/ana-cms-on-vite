@@ -7,6 +7,7 @@ import "./Sidebar.styles.scss";
 import Home from "../assets/images/icons/home.svg";
 import Music from "../assets/images/icons/music.svg";
 import ArchiveBook from "../assets/images/icons/archive-book.svg";
+import Gift from "../assets/images/icons/gift.svg";
 import LogOutButton from "../components/LogOutButton";
 import { VERSION_NUMBER } from "../utils/version.util";
 
@@ -40,16 +41,19 @@ const menuItems: MenuItem[] = [
   {
     ...routes.Journey,
     MenuIcon: (
-      <img
-        src={ArchiveBook}
-        className="w-[20%] h-auto pr-1"
-        alt="daily vibes"
-      />
+      <img src={ArchiveBook} className="w-[20%] h-auto pr-1" alt="journey" />
     ),
     key: routes.Journey.path,
   },
+  {
+    ...routes.GiftCode,
+    MenuIcon: (
+      <img src={Gift} className="w-[20%] h-auto pr-1" alt="gift code" />
+    ),
+    key: routes.GiftCode.path,
+  },
 ];
-const FIRST_ITEM_TOP = (window.innerHeight * 15) / 100;
+const FIRST_ITEM_TOP = 145;
 
 const Sidebar = () => {
   const [currentItem, setCurrentItem] = useState("0");
@@ -64,7 +68,7 @@ const Sidebar = () => {
   return (
     <Sider width={"12%"} className="bg-primary ">
       <div className="flex flex-col h-full bg-primary">
-        <div className="flex justify-center p-12">
+        <div className="flex justify-center p-12 ">
           <img src={logo} alt="" className="login-logo" />
         </div>
         <div className="flex flex-col justify-between h-full w-full">
@@ -79,7 +83,7 @@ const Sidebar = () => {
             }}
           >
             <div
-              className="indicator w-[7px] h-[40px] bg-white rounded-r-lg absolute left-0 duration-150"
+              className="indicator w-[7px] h-[40px] bg-white rounded-r-lg absolute left-0 duration-[250ms]"
               style={{ top: indicator + "px" }}
             ></div>
 
